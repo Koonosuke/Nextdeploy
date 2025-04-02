@@ -10,7 +10,7 @@ import {
 } from "@/types/index";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
-
+console.log(BASE_URL);
 // 共通の fetch ラッパー
 const apiRequest = async <T>(
   endpoint: string,
