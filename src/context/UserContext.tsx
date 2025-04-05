@@ -46,8 +46,12 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <p className="text-xl">読み込み中...</p>
+      <div className="flex flex-col items-center justify-center h-screen bg-black text-white">
+        <div className="animate-spin rounded-full h-24 w-24 border-t-4 border-blue-500 mb-6" />
+        <p className="text-xl font-semibold animate-pulse">接続中...</p>
+        <p className="text-sm mt-2 opacity-70">
+          🚀 準備ができるまで、少々お待ちください。
+        </p>
       </div>
     );
   }
