@@ -42,7 +42,7 @@ const LoginPage = () => {
         className="bg-black bg-opacity-70 rounded-2xl shadow-2xl p-8 w-full max-w-md text-white"
       >
         <h1 className="text-3xl font-extrabold mb-6 text-center animate-pulse">
-          🚀 Welcome to Your Portfolio!
+          Wishing you happiness.
         </h1>
 
         <input
@@ -65,17 +65,13 @@ const LoginPage = () => {
           onClick={handleLogin}
           className="w-full bg-blue-500 hover:bg-blue-600 transition-all duration-200 text-white font-bold py-2 px-4 rounded"
         >
-          🔑 ログイン
+          Login
         </motion.button>
 
         {error && (
           <p className="text-red-400 mt-4 text-center font-medium">{error}</p>
         )}
       </motion.div>
-
-      <p className="mt-6 text-white text-sm opacity-70 animate-pulse">
-        🔒 安全な空間にログイン中...
-      </p>
     </div>
   );
 };
